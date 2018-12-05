@@ -20,7 +20,7 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-#pages [mpvue-entry]
+# pages [mpvue-entry]
 pages 元素为 String 类型时作为 path 的值，为绝对路径或相对于项目根目录的相对路径
 
 property	type	default	describe
@@ -32,3 +32,11 @@ subPackage	Boolean	false	分包加载
 root	String	-	分包根路径
 name	String	root	分包别名
 independent	Boolean	false	独立分包
+
+
+$ npm install eslint-friendly-formatter --save
+可能缺少的文件，单独安装。
+
+
+# vuex
+store为vuex
