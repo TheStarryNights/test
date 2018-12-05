@@ -43,4 +43,14 @@ store为vuex
 
 
 # UI组件库
+
 iView Weapp
+
+**不安装UI组件库可能会报错。**
+//引用UI组件 pages.js内
+"usingComponents": {
+  "i-button": "../../iView/button/index"
+}
+
+https://weapp.iviewui.com/docs/guide/start
+UI库未引入请直接在官网下载。
