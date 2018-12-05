@@ -20,7 +20,7 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# pages [mpvue-entry]
+# pages [mpvue-entry]https://github.com/F-loat/mpvue-entry
 pages 元素为 String 类型时作为 path 的值，为绝对路径或相对于项目根目录的相对路径
 
 property	type	default	describe
@@ -40,3 +40,7 @@ $ npm install eslint-friendly-formatter --save
 
 # vuex
 store为vuex
+
+
+# UI组件库
+iView Weapp

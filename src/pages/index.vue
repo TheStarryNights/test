@@ -19,12 +19,14 @@
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
     <a href="/pages/counter" class="counter">去往Vuex示例页面{{ count }}</a>
+    <i-button type="primary" @click="handleClick">这是一个按钮</i-button>
   </div>
 </template>
 
 <script>
 import card from '@/components/card'
 import { mapState } from 'vuex'
+import store from "../store";
 
 export default {
   data () {
@@ -61,6 +63,9 @@ export default {
     clickHandle (msg, ev) {
       // eslint-disable-next-line
       console.log('clickHandle:', msg, ev)
+    },
+    handleClick () {
+      console.log('--------------', ...mapState(['count']))
     }
   },
 

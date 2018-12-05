@@ -1,6 +1,15 @@
 module.exports = [
   {
-    path: 'pages/index' // 页面路径，同时是 vue 文件相对于 src 的路径
+    path: 'pages/index', // 页面路径，同时是 vue 文件相对于 src 的路径
+    route: 'pages/index/home',
+    config: {
+      navigationBarTitleText: '首页',
+      enablePullDownRefresh: true,
+      //引用UI组件
+      "usingComponents": {
+        "i-button": "../../iView/button/index"
+      }
+    }
   }, {
     path: 'pages/counter'
   }, {
