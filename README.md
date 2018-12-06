@@ -20,6 +20,7 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+
 # pages [mpvue-entry]https://github.com/F-loat/mpvue-entry
 pages 元素为 String 类型时作为 path 的值，为绝对路径或相对于项目根目录的相对路径
 
@@ -54,3 +55,4 @@ iView Weapp
 
 https://weapp.iviewui.com/docs/guide/start
 UI库未引入请直接在官网下载。
+
