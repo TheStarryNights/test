@@ -19,6 +19,7 @@
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
     <a href="/pages/counter" class="counter">去往Vuex示例页面</a>
+    <zan-button type="primary" size="small" @click="test">确定付款</zan-button>
   </div>
 </template>
 
@@ -38,6 +39,9 @@ export default {
   },
 
   methods: {
+    test(){
+      console.log('-------------')
+    },
     bindViewTap () {
       const url = '/packageA/logs'
       wx.navigateTo({ url })
@@ -67,19 +71,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #000;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  .userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
 }
 
 .userinfo-nickname {
