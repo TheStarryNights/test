@@ -18,15 +18,12 @@
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
-    <a href="/pages/counter" class="counter">去往Vuex示例页面{{ count }}</a>
-    <van-button type="primary">按钮</van-button>
+    <a href="/pages/counter" class="counter">去往Vuex示例页面</a>
   </div>
 </template>
 
 <script>
 import card from '@/components/card'
-import { mapState } from 'vuex'
-import store from "../store";
 
 export default {
   data () {
@@ -35,14 +32,11 @@ export default {
       userInfo: {}
     }
   },
-  computed: {
-    ...mapState([
-      'count'
-    ])
-  },
+
   components: {
     card
   },
+
   methods: {
     bindViewTap () {
       const url = '/packageA/logs'
@@ -63,9 +57,6 @@ export default {
     clickHandle (msg, ev) {
       // eslint-disable-next-line
       console.log('clickHandle:', msg, ev)
-    },
-    handleClick () {
-      console.log('--------------', ...mapState(['count']))
     }
   },
 
@@ -76,18 +67,20 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .userinfo-avatar {
-    width: 128rpx;
-    height: 128rpx;
-    margin: 20rpx;
-    border-radius: 50%;
-  }
 }
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
 .userinfo-nickname {
   color: #aaa;
 }
@@ -95,14 +88,14 @@ export default {
 .usermotto {
   margin-top: 150px;
 }
-.form-container{
-  .form-control {
-    display: block;
-    padding: 0 12px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-  }
+
+.form-control {
+  display: block;
+  padding: 0 12px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
 }
+
 .counter {
   display: inline-block;
   margin: 10px auto;

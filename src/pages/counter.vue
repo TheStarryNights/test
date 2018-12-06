@@ -24,28 +24,7 @@ export default {
       'increment',
       'decrement'
     ])
-  },
-  created() {
-    console.log('created:', this)
-  },
-  mounted() {
-    console.log('mounted:', this)
-  },
-  onLoad() {
-    console.log('onLoad:', this)
-  },
-  onReady () {
-    console.log('onReady:', this)
-  },
-  onShow() {
-    console.log('onShow:', this)
-  },
-  onUnload() {
-    console.log('onUnload:', this)
-  },
-  onHide() {
-    console.log('onHide:', this)
-  },
+  }
 }
 </script>
 
