@@ -7,14 +7,18 @@ module.exports = [
       enablePullDownRefresh: true,
       //引用UI组件
       "usingComponents": {
-        "i-button": "../../iView/button/index"
+        "van-button": "../../vant/button/index"
       }
     }
-  }, {
-    path: 'pages/counter'
-  }, {
+  },
+  {
+    path: 'pages/counter',
+    config: {
+      navigationBarTitleText: 'vuex'
+    }
+  },
+  {
     path: 'packageA/logs',
-    subPackage: true,
     config: { // 页面配置，即 page.json 的内容
       navigationBarTitleText: '查看启动日志'
     }
