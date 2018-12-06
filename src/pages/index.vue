@@ -19,7 +19,7 @@
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
     <a href="/pages/counter" class="counter">去往Vuex示例页面{{ count }}</a>
-    <i-button type="primary" @click="handleClick">这是一个按钮</i-button>
+    <van-button type="primary">按钮</van-button>
   </div>
 </template>
 
