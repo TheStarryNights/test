@@ -72,6 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #000;
 }
 
 .userinfo-avatar {
